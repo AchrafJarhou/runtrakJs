@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #dcdcdc">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LPTF</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="https://laplateforme.io/"
+              target="_blank"
+              >Accueil</a
+            >
+            <a class="nav-link" href="#">Units</a>
+            <a class="nav-link" href="#">Jobs</a>
+            <a class="nav-link" href="#">Skills</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1 class="display-5 text-center mb-5">LaPlateforme_</h1>
+    <div class="container-fluid row">
+      <div class="col-3">
+        <div class="card">
+          <img src="papillon.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Un Papillon</h5>
+            <p class="card-text">
+              Un papillon, c'est un peu comme une chenille, mais avec des ailes
+              , ne pas ingerer.
+            </p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#confirmPapillonModal"
+              >Commander votre propre papillon</a
+            >
+
+            <script>
+              // Blade Runner (1982) quotes - run after DOM is ready
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
+                  let quotes = [
+                    "I've seen things you people wouldn't believe.",
+                    "All those moments will be lost in time, like tears in rain.",
+                    "Time to die.",
+                    "It's too bad she won't live! But then again, who does?",
+                    "Quite an experience to live in fear, isn't it?",
+                  ];
+
+                  let btn = document.getElementById("rebootBtn");
+                  let titleEl = document.getElementById("jumbotronTitle");
+                  let textEl = document.getElementById("jumbotronText");
+
+                  if (!btn || !titleEl || !textEl) return;
+
+                  btn.addEventListener("click", function () {
+                    let q = quotes[Math.floor(Math.random() * quotes.length)];
+                    titleEl.textContent = "Citation — Blade Runner";
+                    textEl.textContent = q;
+                  });
+                })();
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="card text-dark bg-light mb-3 p-5 px-2">
+          <div class="card-body" id="jumbotronCard">
+            <h5 class="card-title" id="jumbotronTitle">Bonjour, monde !</h5>
+            <p class="card-text" id="jumbotronText">
+              il existe plusieurs viosons du terme:
+              <br />
+              le monde est la matiere, l'espace et les phenomènes qui nous sont
+              accessibles par les sens, l'expérience ou la raison. le sens le
+              plus courant designe notre planete. la terre avec ses habitants et
+              son environnement plus ou moins naturel.
+            </p>
+            <li><hr class="dropdown-divider" /></li>
+            <p class="card-text">
+              le sens etendu designe l'univers dans son ensemble.
+            </p>
+            <button type="button" id="rebootBtn" class="btn btn-lg btn-danger">
+              Rebooter le Monde
+            </button>
+            <div class="spinner-border text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <h2 class="text-end fs-6 fw-lighter">Installation de AI 9000</h2>
+      </div>
+      <div class="col-2">
+        <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">Limbes</li>
+          <li class="list-group-item">Luxure</li>
+          <li class="list-group-item">Gourmandise</li>
+          <li class="list-group-item">Avaice</li>
+          <li class="list-group-item">Colere</li>
+          <li class="list-group-item">Heresie</li>
+          <li class="list-group-item">Violence</li>
+          <li class="list-group-item">Ruse et Tromperie</li>
+          <li class="list-group-item">Trahison</li>
+          <li class="list-group-item">Internet Explorer</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="progress w-50 mx-auto">
+        <div
+          class="progress-bar bg-warning"
+          role="progressbar"
+          style="width: 75%"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+
+      <div class="d-flex justify-content-between my-3">
+        <div>
+          <label for="basic-url" class="form-label"
+            >Recevez votre copie gratuite d'internet 2</label
+          >
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="login"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Mot de Passe"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+
+          <label for="basic-url" class="form-label"
+            >URL des Internets 2 et 2.1 Beta</label
+          >
+          <div class="input-group mb-3">
+            <span class="input-group-text">DogeCoin</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+            />
+            <span class="input-group-text">.00</span>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3"
+              >https://example.com/users/</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="basic-url"
+              aria-describedby="basic-addon3"
+            />
+          </div>
+        </div>
+        <div>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-form d-none">
+      <p>bonjour ici explication formulaire</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Modal for papillon confirmation -->
+    <div
+      class="modal fade"
+      id="confirmPapillonModal"
+      tabindex="-1"
+      aria-labelledby="confirmPapillonLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmPapillonLabel">
+              Confirmation d'achat
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Voulez-vous confirmer l'achat de ce papillon ?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Annuler
+            </button>
+            <button
+              type="button"
+              id="confirmPapillonBtn"
+              class="btn btn-primary"
+            >
+              Confirmer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- classe active liste groupe -->
+    <script>
+      // Set first list item as active
+      (function () {
+        let listItems = document.querySelectorAll(".list-group-item");
+        if (listItems.length > 0) {
+          listItems.forEach(function (item) {
+            item.addEventListener("click", function () {
+              listItems.forEach(function (i) {
+                i.style.cursor = "pointer";
+                i.classList.remove("active");
+              });
+              this.classList.add("active");
+            });
+          });
+        }
+      })();
+    </script>
+    <script>
+      // When confirm button clicked: hide modal and show a success alert
+      (function () {
+        let btn = document.getElementById("confirmPapillonBtn");
+        if (!btn) return;
+        btn.addEventListener("click", function () {
+          let modalEl = document.getElementById("confirmPapillonModal");
+          let modal =
+            bootstrap.Modal.getInstance(modalEl) ||
+            new bootstrap.Modal(modalEl);
+          modal.hide();
+
+          // create alert element
+          let alert = document.createElement("div");
+          alert.className =
+            "alert alert-success alert-dismissible fade show mt-3";
+          alert.role = "alert";
+          alert.innerHTML =
+            "Achat confirmé ! Merci pour votre commande." +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+
+          // insert alert after navbar
+          let navbar = document.querySelector(".navbar");
+          if (navbar && navbar.parentNode) {
+            navbar.parentNode.insertBefore(alert, navbar.nextSibling);
+          } else {
+            document.body.insertBefore(alert, document.body.firstChild);
+          }
+        });
+      })();
+    </script>
+    <script>
+      // Pagination: change jumbotron content when clicking page numbers
+      document.addEventListener("DOMContentLoaded", function () {
+        let jTitle = document.getElementById("jumbotronTitle");
+        let jText = document.getElementById("jumbotronText");
+        if (!jTitle || !jText) return;
+
+        let contents = {
+          1: {
+            title: "Exploration",
+            text: "Nous partons explorer de nouveaux horizons — curiosité et code.",
+          },
+          2: {
+            title: "Invention",
+            text: "Faire et défaire, expérimenter : l'innovation commence par l'erreur.",
+          },
+          3: {
+            title: "Réflexion",
+            text: "Penser le monde autrement : algorithms, éthique et poésie.",
+          },
+        };
+
+        let links = document.querySelectorAll(".pagination .page-link");
+        links.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            let text = (this.textContent || "").trim();
+            if (!/^\d+$/.test(text)) return; // ignore Prev/Next
+            let page = text;
+            let c = contents[page] || contents["1"];
+            jTitle.textContent = c.title;
+            jText.textContent = c.text;
+
+            // update active class on pagination
+            document
+              .querySelectorAll(".pagination .page-item")
+              .forEach(function (li) {
+                li.classList.remove("active");
+              });
+            if (this.parentElement && this.parentElement.classList)
+              this.parentElement.classList.add("active");
+          });
+        });
+      });
+    </script>
+
+    <!-- click D G C affiche modal -->
+    <script>
+      let variable = ["d", "g", "c"];
+      let tab = [];
+      let index = 0;
+      let moadlEl = document.querySelector(".modal-form");
+      console.log(moadlEl);
+      window.addEventListener("keydown", (e) => {
+        let char = e.key.toLowerCase();
+        if (char === variable[index]) {
+          tab.push(char);
+          index++;
+          if (index === variable.length) {
+            moadlEl.classList.remove("d-none");
+            index = 0;
+          }
+        } else {
+          tab = [];
+          index = 0;
+        }
+      });
+    </script>
+  </body>
+</html>
