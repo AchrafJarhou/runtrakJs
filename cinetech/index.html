@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cinetech - Accueil</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Cinetech</h1>
+
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Rechercher..."
+        autocomplete="off"
+      />
+      <div id="autocomplete"></div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="movies.html">Films</a>
+        <a href="tv.html">Séries</a>
+        <a href="favorites.html">Favoris</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Films populaires</h2>
+        <div id="popular-movies" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Séries populaires</h2>
+        <div id="popular-series" class="grid"></div>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="search.js"></script>
+  </body>
+</html>

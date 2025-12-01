@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Films - Cinetech</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Films</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="movies.html">Films</a>
+        <a href="tv.html">Séries</a>
+        <a href="favorites.html">Favoris</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="pagination">
+        <button id="prev">Précédent</button>
+        <span id="page-number"></span>
+        <button id="next">Suivant</button>
+      </div>
+
+      <div id="movies-list" class="grid"></div>
+    </main>
+
+    <script type="module" src="movie.js"></script>
+  </body>
+</html>
