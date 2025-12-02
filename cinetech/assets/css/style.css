@@ -49,4 +49,36 @@ button {
   width: 200px;
   max-height: 200px;
   overflow-y: auto;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: absolute;
+  top: 60px;
+  left: 65%;
+  transform: translateX(-50%);
+}
+#search-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: none;
+  width: 200px;
+  outline: none;
+}
+#autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+}
+#autocomplete-item:hover {
+  background-color: #f0f0f0;
+}
+#autocomplete-item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+.jesais {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  place-content: center;
 }
