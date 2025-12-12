@@ -27,7 +27,7 @@ export function getFavorites() {
     return { movie: [], tv: [] };
   }
 }
-
+// Ajoute ou retire un favori
 export function toggleFavorite(type, item) {
   const favs = getFavorites();
 
@@ -46,7 +46,7 @@ export function toggleFavorite(type, item) {
 
   localStorage.setItem("favorites", JSON.stringify(favs));
 }
-
+// Vérifie si un item est dans les favoris
 export function isFavorite(type, id) {
   const favs = getFavorites();
   const list = favs[type] || [];
